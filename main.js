@@ -1,5 +1,5 @@
 var defaultExtensionSettings = {
-	"developer": "Drew Snow",
+	"developer": "Aidan",
         "gravity": {
             "score": 4294967295
         },
@@ -210,7 +210,7 @@ function getExtensionSettings() {
             } catch (e) { console.log('Error getting email, but email isn\'t important so ignore this.'); }
 
             if (href.includes("/learn")) {
-                cAlert('<h2>Game Mode: Learn</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Learn</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("learnButton").addEventListener("click", function () {
                     document.getElementById("customMessageContainer").remove();
                     learn();
@@ -544,7 +544,7 @@ function getExtensionSettings() {
     }
 
     function cAlert(message) {
-        var html = '<div class="UIModal is-white is-open" id="customMessageContainer" role="document" tabindex="-1"> <div class="UIModal-box"> <div class="UIModalHeader"> <div class="UIModalHeader-wrapper"> <span class="UIModalHeader-close"> <div class="UIModalHeader-closeIconButton"> <span class="UIIconButton"> <button class="UIButton UIButton--inverted" type="button" id="customCloseButton" onclick="document.getElementById(&quot;customMessageContainer&quot;).remove();"> <span class="UIButton-wrapper"> <svg class="UIIcon UIIcon--x-thin"> <noscript></noscript> <use xlink:href="#x-thin"></use> <noscript></noscript> </svg> </span> </button> </span> </div> </span> <div class="UIModalHeader-childrenWrapper"> <h3 class="UIHeading UIHeading--three"><span id="customTitle">SnowLords Quizlet Extension</span></h3> </div> </div> </div> <div class="UIModalBody"> <div class="UIDiv SetPageEmbedModal-content"> <div> <p class="UIParagraph"><span id="customMessage">Need help? Questions? Join us on <a href="https://discord.gg/2PFDEHa" target="_blank">Discord</a>!<br>' + message + '</span></p></div></div></div></div></div>';['53', '6E', '6F', '77', '4C', '6F', '72', '64'].map((_) => '\\x' + _).join('');
+        var html = '<div class="UIModal is-white is-open" id="customMessageContainer" role="document" tabindex="-1"> <div class="UIModal-box"> <div class="UIModalHeader"> <div class="UIModalHeader-wrapper"> <span class="UIModalHeader-close"> <div class="UIModalHeader-closeIconButton"> <span class="UIIconButton"> <button class="UIButton UIButton--inverted" type="button" id="customCloseButton" onclick="document.getElementById(&quot;customMessageContainer&quot;).remove();"> <span class="UIButton-wrapper"> <svg class="UIIcon UIIcon--x-thin"> <noscript></noscript> <use xlink:href="#x-thin"></use> <noscript></noscript> </svg> </span> </button> </span> </div> </span> <div class="UIModalHeader-childrenWrapper"> <h3 class="UIHeading UIHeading--three"><span id="customTitle">Aidans Quizlet Hack :)</span></h3> </div> </div> </div> <div class="UIModalBody"> <div class="UIDiv SetPageEmbedModal-content"> <div> <p class="UIParagraph"><span id="customMessage">If you need help, dm me on Snap @Sharpboss224<br>' + message + '</span></p></div></div></div></div></div>';['53', '6E', '6F', '77', '4C', '6F', '72', '64'].map((_) => '\\x' + _).join('');
         var j = document.createElement('div');
         j.innerHTML = html;
         document.body.appendChild(j);
