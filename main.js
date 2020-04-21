@@ -216,30 +216,24 @@ function getExtensionSettings() {
                     learn();
                 });
             } else if (href.includes("/flashcards")) {
-                cAlert('<h2>Game Mode: Flashcards</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Changelog:</h4>+ Added Match time freeze for regular match and diagrams<br>+ Added Gravity score exploit to get ANY score you want!<br>+ Added custom alert box<br>+ Fixed graphics<br>- Removed useless alert boxes.<h4>Instructions:</h4>Umm why are you here? Go cheat somewhere else...<br><br><button class="UIButton" id="flashcardsButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Flashcards</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("flashcardsButton").addEventListener("click", function () {
                     document.getElementById("customMessageContainer").remove();
                 });
             } else if (href.includes("/write")) {
-                cAlert('<h2>Game Mode: Write</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>You dont even have to wait,<br> this is my favorite one to watch!<br><br><button class="UIButton" id="writeButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Write</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("writeButton").addEventListener("click", function () {
                     document.getElementById("customMessageContainer").remove();
                     write();
                 });
             } else if (href.includes("/spell")) {
-                cAlert('<h2>Game Mode: Spell</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>Nothing! Bypassed having to press enter!<br><br><button class="UIButton" id="spellButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
-                getId("spellButton").addEventListener("click", function () {
-                    document.getElementById("customMessageContainer").remove();
-                    spell();
-                });
-            } else if (href.includes("/test")) {
-                cAlert('<h2>Game Mode: Test</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><br><h4>Instructions:</h4>Press "c" (Or the key specified in settings) to toggle the answers.<br>(Be subtle when using)<br><br><button class="UIButton" id="testButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Spell</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("testButton").addEventListener("click", function () {
                     document.getElementById("customMessageContainer").remove();
                     testMode();
                 });
             } else if (href.includes("/micromatch")) {
-                cAlert('<h2>Game Mode: Micromatch</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br><h4>Match Time: </h4><input type="text" id="matchTimeInput" value="0"></input><br><br><button class="UIButton" id="micromatchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Micromatch</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("micromatchButton").addEventListener("click", function () {
                     getId("customMessageContainer").remove();
                     insaneWin("match", 0.5);
@@ -250,14 +244,14 @@ function getExtensionSettings() {
                     getClass("UIModal is-white is-open")[0].style.display = "none";
                 } catch (e) {
                 }
-                cAlert('<h2>Game Mode: Match</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br>By clicking INJECT the score will be automatically sent to Quizlet\'s servers. You do not even have to finish the game for your score to be sent!<br><h4>Match Time (Seconds): </h4><input type="text" id="matchTimeInput" value="' + (getExtensionSettings() ? getExtensionSettings().match.time : 0.5) + '"></input><br><br><button class="UIButton" id="matchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Match</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("matchButton").addEventListener("click", function () {
                     insaneWin("match", getId("matchTimeInput").value);
                     getId("customMessageContainer").remove();
                     match();
                 });
             } else if (href.includes("/gravity")) {
-                cAlert('<h2>Game Mode: Gravity</h2>Thank you for using SnowLord7s Quizlet Exploit<br>Without you, this exploit wouldnt be possible.<br><h4>Instructions:</h4>Press space when the answer appears in the input area. If you get an answer wrong, press space in the input to continue quickly.<br>By clicking INJECT the score will be automatically sent to Quizlet\'s servers.<br><h4>Gravity Score: </h4><input type="text" id="gravityScoreInput" value="' + (getExtensionSettings() ? getExtensionSettings().gravity.score : 4294967295) + '"></input><br><br><button class="UIButton" id="gravityButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+                cAlert('<h2>Game Mode: Gravity</h2>Thanks for using "Aidans Quizlet Hack"<br>This is the best quzilet hack ever :) <br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
                 getId("gravityButton").addEventListener("click", function () {
                     insaneWin("gravity", getId("gravityScoreInput").value);
                     document.getElementById("customMessageContainer").remove();
