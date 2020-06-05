@@ -1,1 +1,1 @@
-alert("Aids is the best at life");
+alert("Bush did it");
